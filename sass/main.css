@@ -1,0 +1,506 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text-blue {
+  color: #0c3c60;
+}
+
+.padding-right {
+  padding-right: 15px;
+  letter-spacing: 1px;
+}
+
+.header {
+  background-color: #0c3c60;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: all 300ms ease-in-out;
+}
+
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.brand-name h5 {
+  font-weight: 340;
+}
+
+.text-msg {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c3c60;
+  font-size: 30px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.user-logo {
+  font-size: 20px;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 340;
+}
+.nav-link:hover {
+  color: #4F659C;
+}
+
+.modify-container {
+  padding: 3px 70px 3px 90px;
+}
+
+.header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.toggle-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.toggle-btn span {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  border-radius: 4px;
+  background-color: white;
+  transition: 0.6s;
+}
+
+.toggle-btn span:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+.toggle-btn span:nth-child(2) {
+  transform: translateY(10px);
+}
+
+.toggle-btn.active :nth-child(3) {
+  display: none;
+}
+
+.toggle-btn.active :nth-child(1) {
+  transform: rotate(-50deg);
+}
+
+.toggle-btn.active :nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.bg-img {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background: url("../assets/banner-bg-img.webp");
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.strategies {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 55%;
+  margin: auto;
+  height: auto;
+  padding-top: 2rem;
+}
+
+.strategies p {
+  font-size: 23px;
+}
+
+.strategies h1 {
+  font-weight: 340;
+}
+
+.book-btn {
+  padding: 14px 36px;
+  font-weight: 500;
+}
+
+.book-btn:hover {
+  background-color: #0c3c60;
+  color: white;
+}
+
+.service-section {
+  margin-top: 5rem;
+}
+
+.card-one {
+  max-width: 74%;
+  text-align: center;
+}
+
+.card-heading {
+  font-size: 38px;
+  letter-spacing: 4px;
+  z-index: -1;
+}
+
+.card-btn {
+  padding: 15px 52px;
+}
+
+.more-info-btn {
+  font-weight: 340;
+  background-color: #0c3c60;
+  color: white;
+}
+.more-info-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.about-section {
+  background-image: linear-gradient(rgb(219, 234, 243), rgba(131, 15, 170, 0.563)), url("../assets/k2-mountain-wallpaper.jpg");
+  background-color: red;
+  width: 100%;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.about-section {
+  color: #162f43;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+
+.ab-content {
+  width: 42%;
+  margin: auto;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.learn-btn {
+  color: #0c3c60;
+  background: transparent;
+}
+
+.ler-btn:hover {
+  background-color: #0c3c60;
+  color: white;
+}
+
+.client {
+  margin-top: 6rem;
+}
+
+.client-logo svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 5rem;
+  padding-bottom: 12rem;
+}
+
+.testimonials {
+  background-color: #f7f7f7;
+  padding-bottom: 5rem;
+}
+
+.text-heading {
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.carousel-item {
+  padding-bottom: 6rem;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+  font-size: 50px;
+  color: black;
+}
+
+.fa-angle-left,
+.fa-angle-right:hover {
+  color: gray;
+}
+
+.slider-content {
+  width: 40%;
+  margin: auto;
+  font-size: 18px;
+}
+
+.slider-nam {
+  position: relative;
+  bottom: 1rem;
+}
+
+.width-of-testimonial {
+  width: 75%;
+}
+
+.contact {
+  background-color: #0c3c60;
+}
+
+.width-of-contact {
+  width: 62%;
+}
+
+.name,
+.name-two {
+  font-size: 18px;
+}
+
+.name-two {
+  width: 91%;
+}
+
+.name input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+}
+
+.name-two input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+}
+
+.form-control {
+  background: transparent;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  position: relative;
+  background-color: #6b889e;
+  bottom: 10px;
+}
+
+.line:hover {
+  background-color: white;
+}
+
+.sub-btn {
+  margin-top: 12px;
+  padding: 17px 68px;
+}
+
+.map {
+  margin-top: 6rem;
+  max-height: 17rem;
+  margin-bottom: 3rem;
+}
+
+.footer {
+  background-color: #072136;
+  padding-bottom: 5rem;
+}
+
+.p-top {
+  padding-top: 40px;
+}
+
+.footer-heading {
+  font-size: 22px;
+}
+
+.footer-content {
+  padding-top: 40px;
+}
+
+.name-of-founder {
+  font-size: 22px;
+}
+
+.email {
+  width: 45%;
+}
+
+.footer-icon {
+  font-size: 22px;
+  letter-spacing: 4px;
+}
+
+.footer-link-size {
+  font-size: 15px;
+}
+
+.emial-address {
+  width: 45%;
+}
+
+.about-width {
+  width: 90%;
+  margin: auto;
+  padding-top: 6rem;
+}
+
+.about-text {
+  padding-left: 50px;
+  padding-right: 116px;
+  line-height: 30px;
+}
+
+.our-section {
+  margin-top: 10rem;
+}
+
+.our-sec-width {
+  width: 75%;
+  margin: auto;
+}
+
+.card-img-one {
+  width: 82%;
+}
+
+.our-p {
+  padding-left: 7rem;
+}
+
+.our-text {
+  width: 20%;
+  margin: auto;
+}
+
+.role {
+  font-size: 18px;
+}
+
+.role-info {
+  width: 78%;
+}
+
+@media (max-width: 576px) {
+  .modify-container {
+    padding: 3px 15px 3px 15px;
+  }
+}
+@media (max-width: 992px) {
+  .user-logo {
+    letter-spacing: 15px;
+  }
+  .let-space {
+    letter-spacing: 15px;
+  }
+  .user-size {
+    font-size: 22px;
+  }
+  .padding-right {
+    padding-right: 0;
+    padding-top: 1rem;
+  }
+  .card-one {
+    max-width: 100%;
+    text-align: center;
+  }
+  .client-logo svg {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .width-of-testimonial {
+    width: 100%;
+  }
+  .slider-content {
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
+    max-width: 80%;
+  }
+  .name-two {
+    width: 100%;
+  }
+  .sub-btn {
+    width: 100%;
+  }
+  .name-of-founder {
+    text-align: center;
+  }
+  .emial-address {
+    width: 100%;
+  }
+  .menu {
+    text-align: center;
+  }
+  .strategies {
+    width: 100%;
+    padding-top: 0rem;
+  }
+  .text-msg {
+    position: fixed;
+    left: 20px;
+    border-radius: 50%;
+  }
+  .pb-bottom {
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 1200px) {
+  .modify-container {
+    padding: 3px 15px 3px 15px;
+  }
+  .ab-content {
+    width: 90%;
+  }
+  .width-of-contact {
+    width: 100%;
+  }
+  .about-width {
+    width: 100%;
+  }
+  .about-text {
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 30px;
+  }
+}/*# sourceMappingURL=main.css.map */
